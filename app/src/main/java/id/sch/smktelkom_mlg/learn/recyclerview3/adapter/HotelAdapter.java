@@ -4,6 +4,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -64,6 +65,8 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
         void doFav(int pos);
 
         void doShare(int pos);
+
+        boolean onCreateOptionMenu(Menu menu);
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
